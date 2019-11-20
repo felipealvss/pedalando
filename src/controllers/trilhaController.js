@@ -19,6 +19,8 @@ module.exports = {
             mapa
         })
 
+        req.io.emit('trilha', post)
+
         return res.json(post)
     }
 }

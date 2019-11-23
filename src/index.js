@@ -27,4 +27,4 @@ app.use(require('./routes.js'));
 
 const port = 3030;
 
-app.listen(port);
+app.listen(process.env.PORT || port);
